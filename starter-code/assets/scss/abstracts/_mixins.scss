@@ -1,0 +1,13 @@
+// 1em = 16px (by default)
+
+@mixin respond($bp) {
+  @if $bp == desktop { //1440px
+    @media only screen and (max-width: 90em) { @content }
+  }
+  @if $bp == tablet { //768px
+    @media only screen and (max-width: 48em) { @content }
+  }
+  @if $bp == mobile { //375px
+    @media only screen and (max-width: 23.4375em) { @content }
+  }
+}

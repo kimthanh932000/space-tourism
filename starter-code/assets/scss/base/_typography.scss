@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url(../../fonts/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url(../../fonts/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Belle Fair';
+  src: url(../../fonts/Bellefair-Regular.ttf);
+}
+
+body {
+  font-family: 'Barlow';
+  font-size: $base-font-size;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-sub-1,
+{
+  font-family: 'Belle Fair';
+}
+
+.heading-5,
+.heading-sub-2 {
+  font-family: 'Barlow Condensed';
+}
+
+
+.heading-1 {
+  font-size: 15rem;
+}
+
+.heading-2 {
+  font-size: 10rem;
+}
+
+.heading-3 {
+  font-size: 5.6rem;
+}
+
+.heading-4 {
+  font-size: 3.2rem;
+}
+
+.heading-5 {
+  font-size: 2.8rem;
+  letter-spacing: 4.75px;
+}
+
+.heading-sub-1 {
+  font-size: 2.8rem;
+}
+
+.heading-sub-2 {
+  font-size: 1.4rem;
+  letter-spacing: 2.35px;
+}
