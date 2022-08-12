@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Barlow';
-  src: url(../../fonts/Barlow-Regular.ttf);
+  src: url(/app/assets/fonts/Barlow-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Barlow Condensed';
-  src: url(../../fonts/BarlowCondensed-Regular.ttf);
+  src: url(/app/assets/fonts/BarlowCondensed-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Belle Fair';
-  src: url(../../fonts/Bellefair-Regular.ttf);
+  src: url(/app/assets/fonts/Bellefair-Regular.ttf);
 }
 
 body {
   font-family: 'Barlow';
-  font-size: $base-font-size;
+  font-size: 1.6rem;
 }
 
 .heading-1,

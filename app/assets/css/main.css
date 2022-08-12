@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url(/app/assets/fonts/Barlow-Regular.ttf);
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url(/app/assets/fonts/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: "Belle Fair";
+  src: url(/app/assets/fonts/Bellefair-Regular.ttf);
+}
+body {
+  font-family: "Barlow";
+  font-size: 1.6rem;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-sub-1 {
+  font-family: "Belle Fair";
+}
+
+.heading-5,
+.heading-sub-2 {
+  font-family: "Barlow Condensed";
+}
+
+.heading-1 {
+  font-size: 15rem;
+}
+
+.heading-2 {
+  font-size: 10rem;
+}
+
+.heading-3 {
+  font-size: 5.6rem;
+}
+
+.heading-4 {
+  font-size: 3.2rem;
+}
+
+.heading-5 {
+  font-size: 2.8rem;
+  letter-spacing: 4.75px;
+}
+
+.heading-sub-1 {
+  font-size: 2.8rem;
+}
+
+.heading-sub-2 {
+  font-size: 1.4rem;
+  letter-spacing: 2.35px;
+}
+
+.l-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Barlow Condensed";
+  padding-top: 4rem;
+  padding-left: 5.5rem;
+}
+.l-header .nav {
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(8.15485rem);
+          backdrop-filter: blur(8.15485rem);
+  position: relative;
+}
+.l-header .nav::before {
+  content: "";
+  height: 1px;
+  width: 47.3rem;
+  background-color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: -55%;
+}
+.l-header .nav__list {
+  list-style: none;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3.8rem 16.5rem 3.8rem 12.3rem;
+}
+.l-header .nav__list span {
+  font-weight: 600;
+}
+.l-header .nav__item {
+  letter-spacing: 2.7px;
+}
+.l-header .nav__item:not(:last-child) {
+  margin-right: 4.8rem;
+}
+.l-header .nav__link {
+  padding: 3.8rem 0;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.l-header .nav__link:not(.l-header .nav__link--active)::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.l-header .nav__link:hover:not(.l-header .nav__link--active)::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.l-header .nav__link:active::after, .l-header .nav__link--active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container {
+  height: 100%;
+  background-image: url(/app/assets/img/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
