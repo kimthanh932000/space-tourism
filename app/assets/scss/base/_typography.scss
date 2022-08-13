@@ -18,6 +18,10 @@ body {
   font-size: 1.6rem;
 }
 
+//.heading {
+//  text-transform: uppercase;
+//}
+
 .heading-1,
 .heading-2,
 .heading-3,
@@ -35,6 +39,9 @@ body {
 
 .heading-1 {
   font-size: 15rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 17.2rem;
 }
 
 .heading-2 {

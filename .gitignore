@@ -16,3 +16,5 @@
 .prettierignore
 
 prepros.config
+
+.idea/
