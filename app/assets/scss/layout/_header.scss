@@ -6,6 +6,10 @@
   padding-top: 4rem;
   padding-left: 5.5rem;
 
+  @include respond('tablet') {
+    padding: 0 0 0 3.9rem;
+  }
+
   .logo {
   }
 
@@ -24,6 +28,10 @@
       position: absolute;
       top: 50%;
       left: -55%;
+
+      @include respond('tablet') {
+        display: none;
+      }
     }
 
     &__list {
@@ -32,8 +40,8 @@
       display: flex;
       padding: 3.8rem 16.5rem 3.8rem 12.3rem;
 
-      span {
-        font-weight: 600;
+      @include respond('tablet') {
+        padding: 3.9rem 4.7rem;
       }
     }
 
@@ -42,6 +50,18 @@
 
       &:not(:last-child) {
         margin-right: 4.8rem;
+
+        @include respond('tablet') {
+          margin-right: 3.7rem;
+        }
+      }
+    }
+
+    &__number {
+      font-weight: 600;
+
+      @include respond('tablet') {
+        display: none;
       }
     }
 
@@ -50,6 +70,10 @@
       text-decoration: none;
       color: inherit;
       position: relative;
+
+      @include respond('tablet') {
+        padding: 3.9rem 0;
+      }
 
       &:not(&--active)::after {
         content: "";

@@ -1,14 +1,31 @@
+.bg-home {
+  background-image: url(/app/assets/img/home/background-home-desktop.jpg);
+
+  @include respond('tablet') {
+    background-image: url(/app/assets/img/home/background-home-tablet.jpg);
+  }
+}
+
 .intro {
   padding: 25.1rem 16.5rem 0;
   display: flex;
   justify-content: space-between;
   color: #D0D6F9;
 
+  @include respond('tablet') {
+    padding: 10.6rem 15.9rem 0;
+    flex-direction: column;
+  }
+
   &__content {
     width: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include respond('tablet') {
+      text-align: center;
+    }
   }
 
   &__heading {
@@ -16,13 +33,29 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include respond('tablet') {
+      font-size: 2rem;
+      letter-spacing: 3.375px;
+      font-weight: 400;
+    }
+
     span {
       margin: 2.4rem 0;
+
+      @include respond('tablet') {
+        line-height: 15rem;
+      }
     }
   }
 
   &__paragraph {
     line-height: 3.2rem;
+    width: 42rem;
+
+    @include respond('tablet') {
+      width: 44rem;
+      line-height: 2.8rem;
+    }
   }
 
   button {
@@ -35,7 +68,15 @@
     cursor: pointer;
     position: relative;
 
-    &:hover {
+    @include respond('tablet') {
+      width: 24.2rem;
+      height: 24.2rem;
+      letter-spacing: 2px;
+      align-self: center;
+      margin-top: 15.6rem;
+    }
+
+      &:hover {
       animation: wave 1s infinite;
     }
   }
