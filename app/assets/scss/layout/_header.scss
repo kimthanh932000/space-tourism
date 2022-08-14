@@ -6,17 +6,41 @@
   padding-top: 4rem;
   padding-left: 5.5rem;
 
-  @include respond('tablet') {
+  @include respond(tablet) {
     padding: 0 0 0 3.9rem;
   }
 
+  @include respond(mobile) {
+    padding: 2.4rem 2.4rem 0;
+  }
+
   .logo {
+    //@include respond(mobile) {
+    //  width: 4rem;
+    //  height: 4rem;
+    //}
+
+    .icon-logo {
+      //
+    }
+  }
+
+  .hamburger {
+    display: none;
+
+    @include respond(mobile) {
+      display: inline-block;
+    }
   }
 
   .nav {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(8.15485rem);
     position: relative;
+
+    @include respond(mobile) {
+      display: none;
+    }
 
     &::before {
       content: "";
@@ -29,7 +53,7 @@
       top: 50%;
       left: -55%;
 
-      @include respond('tablet') {
+      @include respond(tablet) {
         display: none;
       }
     }
@@ -40,7 +64,7 @@
       display: flex;
       padding: 3.8rem 16.5rem 3.8rem 12.3rem;
 
-      @include respond('tablet') {
+      @include respond(tablet) {
         padding: 3.9rem 4.7rem;
       }
     }
@@ -51,7 +75,7 @@
       &:not(:last-child) {
         margin-right: 4.8rem;
 
-        @include respond('tablet') {
+        @include respond(tablet) {
           margin-right: 3.7rem;
         }
       }
@@ -60,7 +84,7 @@
     &__number {
       font-weight: 600;
 
-      @include respond('tablet') {
+      @include respond(tablet) {
         display: none;
       }
     }
@@ -71,7 +95,7 @@
       color: inherit;
       position: relative;
 
-      @include respond('tablet') {
+      @include respond(tablet) {
         padding: 3.9rem 0;
       }
 

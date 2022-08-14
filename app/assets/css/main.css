@@ -124,11 +124,29 @@ body {
     padding: 0 0 0 3.9rem;
   }
 }
+@media only screen and (max-width: 23.4375em) {
+  .l-header {
+    padding: 2.4rem 2.4rem 0;
+  }
+}
+.l-header .hamburger {
+  display: none;
+}
+@media only screen and (max-width: 23.4375em) {
+  .l-header .hamburger {
+    display: inline-block;
+  }
+}
 .l-header .nav {
   background: rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(8.15485rem);
           backdrop-filter: blur(8.15485rem);
   position: relative;
+}
+@media only screen and (max-width: 23.4375em) {
+  .l-header .nav {
+    display: none;
+  }
 }
 .l-header .nav::before {
   content: "";
@@ -235,6 +253,11 @@ body {
     background-image: url(/app/assets/img/home/background-home-tablet.jpg);
   }
 }
+@media only screen and (max-width: 23.4375em) {
+  .bg-home {
+    background-image: url(/app/assets/img/home/background-home-mobile.jpg);
+  }
+}
 
 .intro {
   padding: 25.1rem 16.5rem 0;
@@ -255,8 +278,12 @@ body {
             flex-direction: column;
   }
 }
+@media only screen and (max-width: 23.4375em) {
+  .intro {
+    padding: 4.8rem 2.4rem 0;
+  }
+}
 .intro__content {
-  width: 45rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,6 +296,11 @@ body {
           justify-content: space-between;
 }
 @media only screen and (max-width: 48em) {
+  .intro__content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
   .intro__content {
     text-align: center;
   }
@@ -292,12 +324,28 @@ body {
     font-weight: 400;
   }
 }
+@media only screen and (max-width: 23.4375em) {
+  .intro__heading {
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.9rem;
+    letter-spacing: 2.7px;
+  }
+}
 .intro__heading span {
   margin: 2.4rem 0;
 }
 @media only screen and (max-width: 48em) {
   .intro__heading span {
     line-height: 15rem;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .intro__heading span {
+    font-size: 8rem;
+    font-weight: 400;
+    line-height: 10rem;
+    margin: 1.6rem 0;
   }
 }
 .intro__paragraph {
@@ -308,6 +356,13 @@ body {
   .intro__paragraph {
     width: 44rem;
     line-height: 2.8rem;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .intro__paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 32.7rem;
   }
 }
 .intro button {
@@ -330,6 +385,15 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
     margin-top: 15.6rem;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .intro button {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 8.1rem;
+    font-size: 2rem;
+    letter-spacing: 1.25px;
   }
 }
 .intro button:hover {
