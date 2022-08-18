@@ -1,6 +1,50 @@
+// color
 $color-primary-dark: #0B0D17;
 $color-primary-light: #D0D6F9;
 $color-white: #fff;
 
-//$base-font-size: 1.8rem;
+// font-family
+$ff-barlow: 'Barlow', sans-serif;
+$ff-barlow-condensed: 'Barlow Condensed', sans-serif;
+$ff-belle-fair: 'Belle Fair', san-serif;
 
+$ff-body: $ff-barlow;
+$ff-heading-1: $ff-belle-fair;
+$ff-heading-2: $ff-belle-fair;
+$ff-heading-3: $ff-belle-fair;
+$ff-heading-4: $ff-belle-fair;
+$ff-heading-5: $ff-barlow-condensed;
+
+$ff-sub-heading-1: $ff-belle-fair;
+$ff-sub-heading-2: $ff-barlow-condensed;
+
+$ff-nav: $ff-barlow-condensed;
+
+// font-weight
+$fw-400: 400;
+
+// font-size
+$fs-300: 1.4rem;
+$fs-400: 1.6rem;
+$fs-450: 1.8rem;
+$fs-500: 2.8rem;
+$fs-600: 3.2rem;
+$fs-700: 5.6rem;
+$fs-800: 10rem;
+$fs-900: 15rem;
+
+$fs-body: $fs-450;
+$fs-nav: $fs-400;
+$fs-button; $fs-600;
+
+$fs-body: $fs-500;
+$fs-heading-1: $fs-900;
+$fs-heading-2: $fs-800;
+$fs-heading-3: $fs-700;
+$fs-heading-4: $fs-600;
+$fs-heading-5: $fs-500;
+
+$fs-sub-heading-1: $fs-500;
+$fs-sub-heading-2: $fs-300;
+
+$fs-nav: $fs-400;
