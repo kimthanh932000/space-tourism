@@ -13,6 +13,11 @@ html, body {
   color: #fff;
 }
 
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.6rem;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -50,11 +55,6 @@ html {
   font-family: "Belle Fair";
   src: url(/app/assets/fonts/Bellefair-Regular.ttf);
 }
-body {
-  font-family: "Barlow";
-  font-size: 1.6rem;
-}
-
 .heading-1,
 .heading-2,
 .heading-3,
@@ -149,6 +149,48 @@ body {
   background-position: center;
 }
 
+@media only screen and (max-width: 90em) {
+  .icon-hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .icon-hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .icon-hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 3.3rem;
+    right: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 90em) {
+  .icon-close {
+    display: none;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .icon-close {
+    display: none;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .icon-close {
+    display: inline-block;
+    position: absolute;
+    top: 3.4rem;
+    right: 2.6rem;
+  }
+}
+
+.nav-mobile--active {
+  display: inline-block !important;
+}
+
 .nav {
   background: rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(8.15485rem);
@@ -180,24 +222,6 @@ body {
 @media only screen and (max-width: 48em) {
   .nav::before {
     display: none;
-  }
-}
-@media only screen and (max-width: 90em) {
-  .nav .icon-close {
-    display: none;
-  }
-}
-@media only screen and (max-width: 48em) {
-  .nav .icon-close {
-    display: none;
-  }
-}
-@media only screen and (max-width: 23.4375em) {
-  .nav .icon-close {
-    display: inline-block;
-    position: absolute;
-    top: 3.4rem;
-    right: 2.6rem;
   }
 }
 .nav__list {
@@ -332,10 +356,6 @@ body {
     width: 4px;
     height: 3.1rem;
   }
-}
-
-.nav--active {
-  display: inline-block;
 }
 
 .bg-home {
@@ -492,4 +512,87 @@ body {
 .intro button:hover {
   -webkit-animation: wave 1s infinite;
           animation: wave 1s infinite;
+}
+
+.bg-destination {
+  background-image: url(/app/assets/img/destination/background-destination-desktop.jpg);
+}
+@media only screen and (max-width: 48em) {
+  .bg-destination {
+    background-image: url(/app/assets/img/destination/background-destination-tablet.jpg);
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .bg-destination {
+    background-image: url(/app/assets/img/destination/background-destination-mobile.jpg);
+  }
+}
+
+.destination {
+  padding: 7.6rem 16.3rem 0 16.65rem;
+}
+.destination .heading-5 span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+.destination .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6.4rem;
+}
+.destination__img {
+  width: 44.5rem;
+  height: 44.5rem;
+  margin-top: 3.3rem;
+  margin-right: 15.7rem;
+}
+.destination__img img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.destination__info nav {
+  margin-bottom: 4.9rem;
+}
+.destination__info .nav__list {
+  padding: 0;
+}
+.destination__info .nav__link {
+  padding-bottom: 1.2rem;
+  padding-top: 0;
+}
+.destination__name {
+  line-height: 11.46rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.destination__description {
+  width: 44.4rem;
+  color: #D0D6F9;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  position: relative;
+}
+.destination__description::after {
+  content: "";
+  width: 44.4rem;
+  height: 1px;
+  background-color: #383B4B;
+  position: absolute;
+  bottom: -5.4rem;
+  left: 0;
+}
+.destination__statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8.2rem;
+  text-transform: uppercase;
+}
+.destination__statistic-distance {
+  margin-right: 7.9rem;
+}
+.destination__statistic .heading-sub-2 {
+  margin-bottom: 1.2rem;
 }

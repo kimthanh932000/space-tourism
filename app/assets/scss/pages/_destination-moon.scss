@@ -1,0 +1,95 @@
+.bg-destination {
+  background-image: url(/app/assets/img/destination/background-destination-desktop.jpg);
+
+  @include respond(tablet) {
+    background-image: url(/app/assets/img/destination/background-destination-tablet.jpg);
+  }
+
+  @include respond(mobile) {
+    background-image: url(/app/assets/img/destination/background-destination-mobile.jpg);
+  }
+}
+
+.destination {
+  padding: 7.6rem 16.3rem 0 16.65rem;
+
+  .heading-5 {
+
+    span {
+      font-weight: 700;
+      opacity: .25;
+    }
+  }
+
+  .container {
+    display: flex;
+    margin-top: 6.4rem;
+  }
+
+  &__img {
+    width: 44.5rem;
+    height: 44.5rem;
+    margin-top: 3.3rem;
+    margin-right: 15.7rem;
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    nav {
+      margin-bottom: 4.9rem;
+    }
+
+    .nav__list {
+      padding: 0;
+      //margin-bottom: 3.7rem;
+    }
+
+    .nav__link {
+      padding-bottom: 1.2rem;
+      padding-top: 0;
+    }
+  }
+
+  &__name {
+    line-height: 11.46rem;
+    font-weight: $fw-400;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    width: 44.4rem;
+    color: $color-primary-light;
+    font-size: $fs-450;
+    line-height: 3.2rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 44.4rem;
+      height: 1px;
+      background-color: #383B4B;
+      position: absolute;
+      bottom: -5.4rem;
+      left: 0;
+    }
+  }
+
+  &__statistic {
+    display: flex;
+    margin-top: 8.2rem;
+    text-transform: uppercase;
+
+    &-distance {
+      margin-right: 7.9rem;
+    }
+
+    .heading-sub-2 {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+}
