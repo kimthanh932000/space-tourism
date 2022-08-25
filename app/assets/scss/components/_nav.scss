@@ -1,5 +1,10 @@
 .icon-hamburger {
+
   @include respond(desktop) {
+    display: none;
+  }
+
+  @include respond(lg) {
     display: none;
   }
 
@@ -21,6 +26,10 @@
     display: none;
   }
 
+  @include respond(lg) {
+    display: none;
+  }
+
   @include respond(tablet) {
     display: none;
   }
@@ -34,7 +43,7 @@
 }
 
 .nav-mobile--active {
-  display: inline-block!important;
+  display: inline-block !important;
 }
 
 .nav {
@@ -173,6 +182,11 @@
       position: absolute;
 
       @include respond(desktop) {
+        bottom: 0;
+        left: 0;
+      }
+
+      @include respond(lg) {
         bottom: 0;
         left: 0;
       }

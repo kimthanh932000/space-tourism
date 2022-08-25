@@ -154,6 +154,11 @@ html {
     display: none;
   }
 }
+@media only screen and (min-width: 90em) {
+  .icon-hamburger {
+    display: none;
+  }
+}
 @media only screen and (max-width: 48em) {
   .icon-hamburger {
     display: none;
@@ -169,6 +174,11 @@ html {
 }
 
 @media only screen and (max-width: 90em) {
+  .icon-close {
+    display: none;
+  }
+}
+@media only screen and (min-width: 90em) {
   .icon-close {
     display: none;
   }
@@ -342,6 +352,12 @@ html {
   position: absolute;
 }
 @media only screen and (max-width: 90em) {
+  .nav__link:active::after, .nav__link--active::after {
+    bottom: 0;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 90em) {
   .nav__link:active::after, .nav__link--active::after {
     bottom: 0;
     left: 0;

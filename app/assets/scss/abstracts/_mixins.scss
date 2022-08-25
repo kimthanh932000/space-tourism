@@ -10,7 +10,7 @@
   @if $bp == mobile { //375px
     @media only screen and (max-width: 23.4375em) { @content }
   }
-  @if $bp == lg { // > 1440px
+  @if $bp == lg { //1440px
     @media only screen and (min-width: 90em) { @content }
   }
 }
