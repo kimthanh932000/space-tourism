@@ -31,7 +31,10 @@
     }
 
     @include respond(mobile) {
-
+      max-width: 32.7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -42,9 +45,18 @@
       margin-left: -1.5rem;
     }
 
+    @include respond(mobile) {
+      font-size: $fs-400;
+      letter-spacing: 2.7px;
+    }
+
     span {
       font-weight: 700;
       opacity: .25;
+
+      @include respond(mobile) {
+        margin-right: 1.8rem;
+      }
     }
   }
 
@@ -58,6 +70,10 @@
       justify-content: center;
       //text-align: center;
     }
+
+    @include respond(tablet) {
+      margin-top: 3.2rem;
+    }
   }
 
   &__img {
@@ -69,6 +85,11 @@
       width: 30rem;
       height: 30rem;
       margin: 0;
+    }
+
+    @include respond(tablet) {
+      width: 17rem;
+      height: 17rem;
     }
 
     img {
@@ -93,16 +114,45 @@
       @include respond(tablet) {
         margin-bottom: 3.2rem;
       }
+      @include respond(mobile) {
+        margin-bottom: 2rem;
+      }
     }
 
     .nav__list {
       padding: 0;
-      //margin-bottom: 3.7rem;
+
+      @include respond(mobile) {
+        flex-direction: row;
+      }
+    }
+
+    .nav__item {
+      @include respond(mobile) {
+        &:not(:last-child) {
+          margin-right: 2.7rem;
+        }
+      }
     }
 
     .nav__link {
       padding-bottom: 1.2rem;
       padding-top: 0;
+
+      @include respond(mobile) {
+        font-size: $fs-300;
+        padding-bottom: .8rem;
+      }
+    }
+
+    .nav__link--active::after {
+      @include respond(mobile) {
+        top: unset;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+      }
     }
   }
 
@@ -114,6 +164,10 @@
     @include respond(tablet) {
       font-size: 8rem;
       line-height: 9.168rem;
+    }
+    @include respond(mobile) {
+      font-size: $fs-700;
+      line-height: 6.418rem;
     }
   }
 
@@ -131,6 +185,12 @@
       margin-top: 8px;
     }
 
+    @include respond(mobile) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-top: 1px;
+    }
+
     &::after {
       content: "";
       width: 44.4rem;
@@ -144,6 +204,10 @@
         width: 100%;
         bottom: -4.9rem;
       }
+
+      @include respond(mobile) {
+        bottom: -3.2rem;
+      }
     }
   }
 
@@ -156,8 +220,17 @@
       margin-top: 7.7rem;
     }
 
+    @include respond(mobile) {
+      margin-top: 6.4rem;
+      flex-direction: column;
+    }
+
     &-distance {
       margin-right: 7.9rem;
+      @include respond(mobile) {
+        margin-right: 0;
+        margin-bottom: 3.2rem;
+      }
     }
 
     .heading-sub-2 {
