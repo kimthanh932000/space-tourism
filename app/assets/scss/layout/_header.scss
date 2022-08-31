@@ -15,13 +15,13 @@
   }
 
   .logo {
-    //@include respond(mobile) {
-    //  width: 4rem;
-    //  height: 4rem;
-    //}
+    @include respond(mobile) {
+      width: 4rem;
+      height: 4rem;
+    }
 
     .icon-logo {
-      //
+      max-width: 100%;
     }
   }
 

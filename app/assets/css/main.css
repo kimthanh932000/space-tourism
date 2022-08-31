@@ -133,6 +133,15 @@ html {
     padding: 2.4rem 2.4rem 0;
   }
 }
+@media only screen and (max-width: 23.4375em) {
+  .l-header .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.l-header .logo .icon-logo {
+  max-width: 100%;
+}
 .l-header .hamburger {
   display: none;
 }
@@ -143,7 +152,7 @@ html {
 }
 
 .bg-container {
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
